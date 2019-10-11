@@ -1,0 +1,20 @@
+.renderLoading {
+  background-color: #222;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  color: #fff;
+  
+  .loadingText {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 20px;
+    width: 100px;
+    margin-top: -10px;
+    margin-left: -50px;
+  }
+}

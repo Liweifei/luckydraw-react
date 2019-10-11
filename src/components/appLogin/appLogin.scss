@@ -1,0 +1,131 @@
+.el-message-box{
+    .el-button--default{
+      border-radius: 4px;
+      border: 1px solid #B2B2B2 !important;
+      color: #B2B2B2 !important;
+      background-color: #fff !important;
+      color: #363636 !important;
+    }
+    .el-button--primary{
+        border-radius: 4px;
+        border: 1px solid #00BAC6 !important;
+        background-color: #00BAC6 !important;
+        color: #fff !important;
+        margin-left: 15px;
+    }
+    .el-message-box__status.el-icon-info{
+        color: #00BAC6 !important;
+    }
+  }
+.appLogin{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    line-height: 1;
+    
+    .count{
+        position: fixed;
+        z-index: 111;
+        font-size: 53px;
+    }
+    .headBg{
+        min-width: 100%;
+        width: 1920px;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+    }
+    .main{
+        // width: 654px;
+        // height: 658px;
+        width: 512px;
+        height: 553px;
+        position: absolute;
+        // top: 60px;
+        top: 50%;
+        left: 50%;
+        margin-left: -256px;
+        margin-top: -276.5px;
+        z-index: 2;
+
+        .sysName{
+            width: 100%;
+            height:40px;
+            line-height: 1;
+            // margin-bottom: 30px;
+            font-size:40px;
+            font-weight:bold;
+            color:rgba(255,255,255,1);
+            text-align: center;
+        }
+        .formBox{
+            width: 100%;
+            height: 513px;
+            overflow: hidden;
+            padding: 0 108px;
+            box-sizing: border-box;
+            background-image: url("../../assets/img/loginBg.png");
+
+            .title{
+                font-weight: normal;
+                text-align: center;
+                margin: 60px 0;
+                font-size:40px;
+                letter-spacing: 5px;
+                color:rgba(35,54,55,1);
+            }
+            .content{
+                .ant-form{
+                    line-height: 1;
+                }
+                .inputItem{
+                    &+.inputItem{
+                        margin-top: 30px;
+                    }
+                    .labe{
+                        font-size:16px;
+                        color: #333333;
+                        margin-bottom: 7px;
+                    }
+                    .ant-form-item{
+                        margin-bottom: 0;
+                    }
+                    .ant-input{
+                        height:45px;
+                        line-height: 45px;
+                        background:rgba(250,255,255,1) !important;
+                        border:1px solid rgba(224,253,255,1) !important;
+                        border-radius:4px;
+
+                        &:focus{
+                            box-shadow: none;
+                        }
+                    }
+                }
+                .confirmBtn{
+                    width: 100%;
+                    padding: 0;
+                    height: 45px;
+                    line-height: 45px;
+                    margin-top: 48px;
+                    font-size: 18px;
+                    border-radius: 4px;
+                    border: 1px solid #00bac6 !important;
+                    background-color: #00bac6 !important;
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+    .copyright{
+        position: fixed;
+        text-align: center;
+        left: 0;
+        right: 0;
+        bottom: 15px;
+        font-size:16px;
+        color:rgba(102,102,102,1);
+    }
+}
